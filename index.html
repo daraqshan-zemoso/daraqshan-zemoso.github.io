@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zemoso Restaurant</title>
+        <meta charset="UTF-8">
+        <link href="app.css" rel="stylesheet">
+    </head>
+
+    <body>
+        
+        <div class="nav">
+            <h1 style="text-align: center;">Tables</h1>
+            <input type="text" id="tablesearch" placeholder="Search Table" onkeyup="searchTable()">
+
+            <div class="table" id="table1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <button class="myBtn" onclick="document.getElementsByClassName('modal')[0].style.display='block'">table1</button>
+                <div class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="document.getElementsByClassName('modal')[0].style.display='none'">&times;</span>
+                    <h2>Table 1</h2>
+                    <h3>Items:</h3>
+                    <p id="table1Items"></p>
+                    <button class="myBtn1" id="table1CheckOut" onclick="clearBill(event)">Checkout</button>
+                </div>
+
+                </div>
+                <br>
+                <p>Total</p>
+                <p id="table1total"></p>
+                <p>Items</p>
+                <p id="table1ItemCount"></p>
+            </div>
+
+            <div class="table" id="table2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <button class="myBtn" onclick="document.getElementsByClassName('modal')[1].style.display='block'">table2</button>
+                    <div class="modal">
+                   
+                    <div class="modal-content">
+                        <span class="close" onclick="document.getElementsByClassName('modal')[1].style.display='none'">&times;</span>
+                        <h2>Table 2</h2>
+                        <h3>Items:</h3>
+                        <p id="table2Items"></p>
+                        <button class="myBtn1" id="table2CheckOut" onclick="clearBill(event)">Checkout</button>
+                    </div>
+    
+                    </div>
+                    <br>
+                    <p>Total</p>
+                    <p id="table2total"></p>
+                    <p>Items</p>
+                    <p id="table2ItemCount"></p>
+            </div>
+
+            <div class="table" id="table3" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <button class="myBtn" onclick="document.getElementsByClassName('modal')[2].style.display='block'">table3</button>
+                    <div class="modal">
+                   
+                    <div class="modal-content">
+                        <span class="close" onclick="document.getElementsByClassName('modal')[2].style.display='none'">&times;</span>
+                        <h2>Table 3</h2>
+                        <h3>Items:</h3>
+                        <p id="table3Items"></p>
+                        <button class="myBtn1" id="table3CheckOut" onclick="clearBill(event)">Checkout</button>
+                    </div>
+                    </div>
+                    <br>
+                    <p>Total</p>
+                    <p id="table3total"></p>
+                    <p>Items</p>
+                    <p id="table3ItemCount"></p>
+            </div>
+        </div>
+
+       
+            <div class="main">
+                <h1 style="text-align: center;">Zemoso Restaurant</h1>
+                <h1 style="text-align: center;">Menu</h1>
+                <input type="text" id="searchmenu" placeholder="Search menu.." onkeyup="search()">
+                
+
+                <div class="menu">
+                    <!--<div class="item" id="tomatosoup" value="100" draggable="true" ondragstart="drag(event)">
+                    <p class="itemName">tomato soup</p>
+                    <p class="itemPrice">Price:100</p><br><br>
+                    <p class="itemCategory">Category:soups</p>
+                </div>
+                <div class="item" id="manchowsoup" value="120" draggable="true" ondragstart="drag(event)">
+                    <p class="itemName" >manchow soup</p>
+                    <p class="itemPrice">Price:120</p><br><br>
+                    <p class="itemCategory">Category:soups</p>
+                </div>
+                <div class="item" id="muttonkebab" value="160" draggable="true" ondragstart="drag(event)">
+                    <p class="itemName" >mutton kebab</p>
+                    <p class="itemPrice">Price:160</p><br><br>
+                    <p class="itemCategory">Category:starters</p>
+                </div>
+                
+                <div class="item" id="sheekkebab" value="140" draggable="true" ondragstart="drag(event)">
+                    <p class="itemName" >sheek kebab</p>
+                    <p class="itemPrice">Price:140</p><br><br>
+                    <p class="itemCategory">Category:starters</p>
+                </div>
+                <div class="item" id="chickentikka" value="165" draggable="true" ondragstart="drag(event)">
+                    <p class="itemName" >chicken tikka</p>
+                    <p class="itemPrice">Price:165</p><br><br>
+                    <p class="itemCategory">Category:starters</p>
+                </div>
+                <div class="item" id="eggfriedrice" value="170" draggable="true" ondragstart="drag(event)">
+                    <p class="itemName" >egg fried rice</p>
+                    <p class="itemPrice">Price:170</p><br><br>
+                    <p class="itemCategory">Category:main-course</p>
+                </div>
+                <div class="item" id="chickenfriedrice" value="190" draggable="true" ondragstart="drag(event)">
+                    <p class="itemName" >chicken fried rice</p>
+                    <p class="itemPrice">Price:190</p><br><br>
+                    <p class="itemCategory">Category:main-course</p>
+                </div>
+                <div class="item" id="rabdi" value="80" draggable="true" ondragstart="drag(event)">
+                    <p class="itemName" >rabdi</p>
+                    <p class="itemPrice">Price:80</p><br><br>
+                    <p class="itemCategory">Category:desserts</p>
+                </div>
+                <div class="item" id="gulabjamun" value="60" draggable="true" ondragstart="drag(event)">
+                    <p class="itemName" >gulab jamun</p>
+                    <p class="itemPrice">Price:60</p><br><br>
+                    <p class="itemCategory">Category:desserts</p>
+                </div>  -->
+            </div>
+            </div>
+            <script src="script.js"></script>
+    </body>
+</html>
